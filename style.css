@@ -1,0 +1,648 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position:relative;
+    touch-action:manipulation;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+    padding:0;
+    margin:0;
+    border:0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* SIDEBAR NAVIGATION */
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+#menu-icon {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+    z-index: 200;
+}
+
+#menu-img {
+    position: fixed;
+    padding: 25px;
+    margin: 0;
+    border: 0;
+    width: 50px;
+    z-index: 150;
+}
+
+#sidebar {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+#nav-list {
+    margin: 100px 0 0 0;
+}
+
+.main-nav-btn {
+    position: relative;
+    padding: 15px 25px;
+    margin: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    color: #31ff00;
+    text-align: left;
+    text-shadow: 0px 0px 5px black;
+    font-size: 150%;
+    font-variant: small-caps;
+    z-index: 100;
+}
+
+.main-nav-btn:hover, .main-nav-btn:focus {
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.sub-nav-btn {
+    position: relative;
+    padding: 15px 50px;
+    margin: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    color: white;
+    text-align: left;
+    text-shadow: 0px 0px 5px black;
+    font-size: 130%;
+    font-variant: small-caps;
+    z-index: 100;
+}
+
+.sub-nav-btn:hover, .sub-nav-btn:focus {
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.drop-content {
+    display: block;
+    z-index: 100;
+}
+
+#top-icon {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    left: 75px;
+    background: none;
+    z-index: 200;
+}
+
+#top-img {
+    position: fixed;
+    padding: 25px;
+    margin: 0;
+    border: 0;
+    width: 50px;
+    z-index: 150;
+}
+
+
+
+
+
+
+
+/* --- PARALLAX --- */
+.parallax {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 90%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#trickshots.parallax {
+    background-image: url('./PinyaGames/TrickShots/pg-trickshots-splash.png');
+}
+
+#holochess.parallax {
+    background-image: url('./PinyaGames/HoloChess/pg-holochess-splash.png');
+}
+
+#cubic3d.parallax {
+    background-image: url('./PinyaGames/Cubic3D/pg-cubic3d-splash.png');
+}
+
+#infinitygallery.parallax {
+    background-image: url('./PinyaGames/InfinityGallery/pg-infinitygallery-splash.png');
+}
+
+#smartbike.parallax {
+    background-image: url('./ProductDesign/SmartBike/pd-smartbike-splash.png');
+}
+
+#hololens2.parallax {
+    background-image: url('./ProductDesign/Hololens2/pd-hololens-splash.png');
+}
+
+#gwood.parallax {
+    background-image: url('./ProductDesign/Gwood/pd-gwood-splash.png');
+}
+
+#orbit.parallax {
+    background-image: url('./ProductDesign/Orbit/pd-orbit-splash.png');
+}
+
+#showbattle.parallax {
+    background-image: url('./ProductDesign/ShowBattle/pd-showbattle-splash.png');
+}
+
+#smartwatch.parallax {
+    background-image: url('./ProductDesign/SmartWatch/pd-smartwatch-splash.png');
+}
+
+
+
+
+/* --- TITLE-EXPL --- */
+.title {
+    position: relative;
+    padding: 30px 0px 0px 0px;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 300%;
+    text-align: center;
+    z-index: 0;
+}
+
+.subtitle {
+    position: relative;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    border: 0;
+    width: 80%;
+    left: 10%;
+    color: #757575;
+    font-size: 150%;
+    text-align: center;
+    z-index: 0;
+}
+
+.expl {
+    position: relative;
+    padding: 50px 5% 50px 5%;
+    margin: 30px 0 50px 0;
+    border: 0;
+    background-color: #e2e2e2;
+    width: 50%;
+    left: 20%;
+    color: black;
+    font-size: 120%;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    z-index: 0;
+}
+
+
+
+
+
+/* --- ICON --- */
+.icon {
+    padding: 0;
+    margin: 50px 0 0 0;
+    border: 0;
+    width: 10%;
+    height:auto;
+    left: 45%;
+    z-index: 0;
+}
+
+
+
+
+/* --- IMAGE --- */
+.img {
+    padding: 0 0 25px 0;
+    margin: 0;
+    border: 0;
+    width: 80%;
+    left: 10%;
+    z-index:0;
+}
+
+#smartwatch-img {
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+/* --- WEB LINK --- */
+.web-link-box {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    z-index: 0;
+}
+
+.web-link-img {
+    position:relative;
+    height: 100%;
+}
+
+.web-link {
+    position: absolute;
+    padding: 20px 0;
+    margin: 0;
+    border: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: white;
+    font-size: 100%;
+    font-variant: small-caps;
+    text-decoration: none;
+    z-index: 0;
+}
+
+
+
+
+/* --- LINK ICONS --- */
+.link-icons {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 160px;
+    text-align: center;
+}
+
+.link-icons a {
+    display: inline-block;
+    padding: 0;
+    margin: 30px;
+    border: 0;
+    background: none;
+}
+
+.link-icons a img{
+    width: 100px;
+}
+
+
+
+/* --- LOGO --- */
+.logo {
+    padding: 0;
+    margin: 0 0 30px 0;
+    border: 0;
+    width: 25%;
+    left: 37.5%;
+    z-index: 0;
+}
+
+
+
+
+/* --- TEXT-BAR --- */
+.text-bar {
+    position: relative;
+    padding: 20px 5% 20px 5%;
+    margin: 0;
+    border: 0;
+    background-color: #1d9600; 
+    width: 90%;
+    left: 0%;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    z-index: 0;
+}
+
+
+
+
+
+/* --- GIF --- */
+.gif-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: black;
+    height: 70%;
+    width: 100%;
+    z-index: 0;
+}
+
+#smartbike-gif.gif-container {
+    background-color: black;
+}
+
+#hololens2-gif.gif-container {
+    background-color: white;
+}
+
+#orbit-gif.gif-container {
+    background-color: white;
+}
+
+#smartwatch-gif.gif-container {
+    background-color: black;
+} 
+
+.gif-box {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 0;
+}
+
+.gif {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+
+
+
+/* --- SCREENSHOTS --- */
+.screenshots-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: black;
+    height: 80%;
+    width: 100%;
+    z-index: 0;
+}
+
+.screenshots {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.screenshots img {
+    position: absolute;
+    transform: translate(-50%, 0);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+}
+
+
+.left-arrow {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    left: 5%;
+    top: 50%;
+    transform: translate(-25px, -50px);
+    z-index: 10;
+}
+
+.right-arrow {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    top: 50%;
+    transform: translate(-25px, -50px);
+    z-index: 10;
+}
+
+
+
+
+
+
+/* --- PROJECT FOOTER --- */
+.project-footer {
+    position: relative;
+    padding: 50px 0;
+    margin: 0;
+    border: 0;
+    background-color: #252525;
+    width: 100%;
+    min-height: 20%;
+    text-align: center;
+}
+
+.project-footer p.copy {
+    padding: 0 0 30px 0;
+    color: #7c7c7c;
+    font-size: 120%;
+}
+
+.project-footer p {
+    width: 60%;
+    left: 20%;
+    color: #7c7c7c;
+    font-size: 90%;
+}
+
+.shadow {
+    position: absolute;
+    top: -1px;
+    height: 50px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* --- FOOTER --- */
+
+.link-container {
+    position: relative;
+    padding: 30px 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    background-color: #909090;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.link-container a {
+    display: inline-block;
+    padding: 30px 0;
+    margin: 10px;
+    background-color: #e2e2e2;
+    box-shadow: 0 0 20px black;
+    width: 27%;
+    color: black;
+    font-size: 125%;
+    text-decoration: none;
+    z-index: 10;
+}
+
+
+
+
+/* --- MEDIA QUERIES --- */
+@media(max-width: 768px){
+
+    /* --- PARALLAX --- */
+    #holochess.parallax {
+        background-image: url('./PinyaGames/HoloChess/pg-holochess-splash-mobile.png');
+    }
+
+    #trickshots.parallax {
+        background-image: url('./PinyaGames/TrickShots/pg-trickshots-splash-mobile.png');
+    }
+
+    #cubic3d.parallax {
+        background-image: url('./PinyaGames/Cubic3D/pg-cubic3d-splash-mobile.png');
+    }
+
+    #infinitygallery.parallax {
+        background-image: url('./PinyaGames/InfinityGallery/pg-infinitygallery-splash-mobile.png');
+    }
+
+    #smartbike.parallax {
+        background-image: url('./ProductDesign/SmartBike/pd-smartbike-splash-mobile.png');
+    }
+
+    #hololens2.parallax {
+        background-image: url('./ProductDesign/Hololens2/pd-hololens-splash-mobile.png');
+    }
+
+    #gwood.parallax {
+        background-image: url('./ProductDesign/Gwood/pd-gwood-splash-mobile.png');
+    }
+    
+    #orbit.parallax {
+        background-image: url('./ProductDesign/Orbit/pd-orbit-splash-mobile.png');
+    }
+
+    #showbattle.parallax {
+        background-image: url('./ProductDesign/ShowBattle/pd-showbattle-splash-mobile.png');
+    }
+
+    #smartwatch.parallax {
+        background-image: url('./ProductDesign/SmartWatch/pd-smartwatch-splash-mobile.png');
+    }
+
+    /* --- ICON --- */
+    .icon {
+        width: 20%;
+        left: 40%;
+    }
+
+    /* --- IMAGE --- */
+    .img {
+        width: 90%;
+        left: 5%;
+    }
+
+    #smartwatch-img {
+        width: 100%;
+        left: 0;
+    }
+
+    /* --- LOGO --- */
+    .logo {
+        width: 50%;
+        left: 25%;
+    }
+
+    /* --- TITLE-EXPL --- */
+    .expl {
+        width: 80%;
+        left: 5%;
+    }
+
+    /* --- HORIZONTAL PARALAX & SCREENSHOTS --- */
+    .left-arrow {
+        left: 10%;
+    }
+
+    .right-arrow {
+        left: 90%;
+    }
+
+    /* --- FOOTER --- */
+    .link-container a {
+        width: 80%;
+    }
+}

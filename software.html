@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Carles Rojas | Software</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="controller.js"></script>
+
+</head>
+<body id="top">
+    <header>
+        <!-- Sidebar Navigation -->
+        <nav>   
+            <!-- Menu icon -->
+            <button id="menu-icon" onclick="Sidebar();">
+                <img id="menu-img" src="./menu-icon.svg" />
+            </button>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar" style="left: -300px;"> 
+
+                <!-- Sidebar Content -->
+                <ul id="nav-list">
+                    <li>
+                        <!-- Dropdown Button -->
+                        <button class="main-nav-btn" onclick="ScrollTo('top');">Software Engineering</button>
+
+                        <!-- Dropdown Content -->
+                        <div id="pinya-games-drop" class="drop-content">
+                            <button class="sub-nav-btn" onclick="ScrollTo('trickshots');">TrickShots</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('holochess');">HoloChess</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('cubic3d');">Cubic 3D</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('infinitygallery');">Infinity Gallery</button>
+                        </div>
+                    </li>
+
+                    <!-- Link to product design -->
+                    <li><button class="main-nav-btn" onclick="GoTo('design');">Product Design</button></li>
+
+                    <!-- Link to Carles Rojas -->
+                    <li><button class="main-nav-btn" onclick="GoTo('carlesrojas');">Carles Rojas</button></li>
+                </ul>
+            </div>
+
+            <!-- Top icon -->
+            <button id="top-icon" class="top-btn" onclick="ScrollTo('top');">
+                <img id="top-img" class="top-btn" src="./top-icon.svg" />
+            </button>
+        </nav>
+    </header>
+
+
+
+    <!-- TRICKSHOTS -->
+    <!-- Parallax Image -->
+    <div id="trickshots" class="parallax"></div>
+
+    <!-- App Icon -->
+    <img class="icon" src="./PinyaGames/TrickShots/pg-trickshots-icon.png" />
+
+    <!-- Title + Explanation -->
+    <p class="title">TrickShots.</p>
+    <p class="subtitle">augmented trick-shots using your room and virtual props</p>
+    <p class="expl">
+        Perform limitless trick shots with a holographic tennis ball that will interact with your surroundings. Add an assortment of different holographic objects like a basketball hoop, a paper bin or a couple of teleporting portals. Challenge yourself and achieve bigger combos to get the higher scores.<br />
+        <br />TrickShots is currently published in the Windows Store and it’s only available via a HoloLens device by Microsoft.
+    </p>
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> screenshots </p>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-container">
+        <div class="screenshots">
+            <button id="trickshots-left-arrow" class="left-arrow" onClick="ArrowClick(this.id, 'trickshots-right-arrow', false, 50)"><img src="arrow-left.svg" /></button>
+            <img class="trickshots-ss-img" style="left:50%;" src="./PinyaGames/TrickShots/pg-trickshots-ss1.png" />
+            <img class="trickshots-ss-img" style="left:150%;" src="./PinyaGames/TrickShots/pg-trickshots-ss2.png" />
+            <img class="trickshots-ss-img" style="left:250%;" src="./PinyaGames/TrickShots/pg-trickshots-ss3.png" />
+            <img class="trickshots-ss-img" style="left:350%;" src="./PinyaGames/TrickShots/pg-trickshots-ss4.png" />
+            <button id="trickshots-right-arrow" class="right-arrow" onClick="ArrowClick('trickshots-left-arrow', this.id, true, 50)"><img src="arrow-right.svg" /></button>
+        </div>
+    </section>
+
+    <!-- Link Icons -->
+    <section class="link-icons">
+        <a href="https://www.microsoft.com/en-us/store/p/trickshots/9nkmv03xqcng#" target="_blank">
+            <img src="./CarlesRojas/icon-hololens.png" />
+        </a>
+    </section>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">&copy;TrickShots by Pinya Games</p>
+        <p>TrickShots is a game made with Unity targeting the HoloLens device by Microsoft. The 3D holograms that can be placed into the world have been modeled using SolidWorks and Maya, and textured with Photoshop. The game is coded in C# and build with Visual Studio and is currently published on the Windows Store.</p>
+    </section>
+
+
+
+    <!-- HOLOCHESS -->
+    <!-- Parallax Image -->
+    <div id="holochess" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- App Icon -->
+    <img class="icon" src="./PinyaGames/HoloChess/pg-holochess-icon.png" />
+
+    <!-- Title + Explanation -->
+    <p class="title">HoloChess 2.</p>
+    <p class="subtitle">the first holographic chess game ever</p>
+    <p class="expl">
+        Play against as AI with three difficulty levels and enjoy the classic game of chess in the augmented world. Choose your favorite style, place the board on your table and enjoy!<br />
+        <br />HoloChess 2 is currently published in the Windows Store and it’s only available via a HoloLens device by Microsoft.
+    </p>
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> screenshots </p>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-container">
+        <div class="screenshots">
+            <button id="holochess-left-arrow" class="left-arrow" onClick="ArrowClick(this.id, 'holochess-right-arrow', false, 50)"><img src="arrow-left.svg" /></button>
+            <img class="holochess-ss-img" style="left:50%;"  src="./PinyaGames/HoloChess/pg-holochess-ss1.png" />
+            <img class="holochess-ss-img" style="left:150%;" src="./PinyaGames/HoloChess/pg-holochess-ss2.png" />
+            <img class="holochess-ss-img" style="left:250%;" src="./PinyaGames/HoloChess/pg-holochess-ss3.png" />
+            <img class="holochess-ss-img" style="left:350%;" src="./PinyaGames/HoloChess/pg-holochess-ss4.png" />
+            <img class="holochess-ss-img" style="left:450%;" src="./PinyaGames/HoloChess/pg-holochess-ss5.png" />
+            <img class="holochess-ss-img" style="left:550%;" src="./PinyaGames/HoloChess/pg-holochess-ss6.png" />
+            <img class="holochess-ss-img" style="left:650%;" src="./PinyaGames/HoloChess/pg-holochess-ss7.png" />
+            <img class="holochess-ss-img" style="left:750%;" src="./PinyaGames/HoloChess/pg-holochess-ss8.png" />
+            <img class="holochess-ss-img" style="left:850%;" src="./PinyaGames/HoloChess/pg-holochess-ss9.png" />
+            <button id="holochess-right-arrow" class="right-arrow" onClick="ArrowClick('holochess-left-arrow', this.id, true, 50)"><img src="arrow-right.svg" /></button>
+        </div>
+    </section>
+
+    <!-- Link Icons -->
+    <section class="link-icons">
+        <a href="https://www.microsoft.com/en-us/store/p/holochess-beta/9nblggh40d7c#" target="_blank">
+            <img src="./CarlesRojas/icon-hololens.png"/>
+        </a>
+    </section>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">&copy;HoloChess II by Pinya Games</p>
+        <p>HoloChess II is a game made with Unity targeting the HoloLens device by Microsoft. The distinctively styled chessboards and pieces have been modeled using SolidWorks and Maya, and textured with Photoshop. The game is coded in C# and build with Visual Studio and is currently published on the Windows Store.</p>
+    </section>
+
+
+
+    <!-- CUBIC 3D -->
+    <!-- Parallax Image -->
+    <div id="cubic3d" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- App Icon -->
+    <img class="icon" src="./PinyaGames/Cubic3D/pg-cubic3d-icon.png" />
+
+    <!-- Title + Explanation -->
+    <p class="title">Cubic 3D.</p>
+    <p class="subtitle">stack and puzzle the 3D tetrominos to avoid them getting to the top!</p>
+    <p class="expl">
+        Both the pieces and the board have three dimensions making this a lot more challenging! Clear whole planes by filling them and try to reach the highest score by clearing four at the same time!<br />
+        <br />Cubic 3D is currently published in the Windows Store and Google Play and it’s available on any mobile device.
+    </p>
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> screenshots </p>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-container">
+        <div class="screenshots">
+            <button id="cubic3d-left-arrow" class="left-arrow" onClick="ArrowClick(this.id, 'cubic3d-right-arrow', false, 50)"><img src="arrow-left.svg" /></button>
+            <img class="cubic3d-ss-img" style="left:50%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss1.png" />
+            <img class="cubic3d-ss-img" style="left:150%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss2.png" />
+            <img class="cubic3d-ss-img" style="left:250%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss3.png" />
+            <img class="cubic3d-ss-img" style="left:350%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss4.png" />
+            <img class="cubic3d-ss-img" style="left:450%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss5.png" />
+            <img class="cubic3d-ss-img" style="left:550%;" src="./PinyaGames/Cubic3D/pg-cubic3d-ss6.png" />
+            <button id="cubic3d-right-arrow" class="right-arrow" onClick="ArrowClick('cubic3d-left-arrow', this.id, true, 50)"><img src="arrow-right.svg" /></button>
+        </div>
+    </section>
+
+    <!-- Link Icons -->
+    <section class="link-icons">
+        <a href="https://play.google.com/store/apps/details?id=com.PinyaGames.Tetris3D" target="_blank">
+            <img src="./CarlesRojas/icon-android.png" />
+        </a>
+        <a href="https://www.microsoft.com/en-us/store/p/cubic3d/9p58mqtkqzmt" target="_blank">
+            <img src="./CarlesRojas/icon-windows.png" />
+        </a>
+    </section>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">&copy;Cubic3D by Pinya Games</p>
+        <p>Cubic 3D is a game made with Unity targeting the mobile devices. The tridimensional tetrominos have been modeled using the default shapes available in Unity. The game is coded in C# is currently published on Google Play and the Windows Store.</p>
+    </section>
+
+
+
+
+
+    <!-- INFINITY GALLERY -->
+    <!-- Parallax Image -->
+    <div id="infinitygallery" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- App Icon -->
+    <img class="icon" src="./PinyaGames/InfinityGallery/pg-infinitygallery-icon.png" />
+
+    <!-- Title + Explanation -->
+    <p class="title">Infinity Gallery.</p>
+    <p class="subtitle">the biggest collection of pictures in the world, for a very particular kind of pictures</p>
+    <p class="expl">
+        All the pictures in Infinity Gallery are 64 by 64 pixels and in grayscale, using 64 shades of grey. The reason the Infinity Gallery is so big is because it contains every combination possible of this finite number of pixels and gray tonalities. Exactly 224576 pictures. You’ve read this number quite fast, and you’re probably not grasping how enormously big that is.<br />
+        <br />So what are the implications of this? In this Gallery you can find every single picture (with those properties) that has been taken in the past and that will be taken in the future. It even contains all the pictures that will never be taken. There is a 64x64 grayscale version of every picture you have posted and will ever post on social media, of each planet in the Universe and each species that may or may not live on them. There is also a picture of those keys you lost a few years ago in the exact location they are now. The only hard task is finding them. Good luck!<br />
+        <br />Infinity Gallery is currently published in the Windows Store and Google Play and it’s available on any mobile device.
+    </p>
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> screenshots </p>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-container">
+        <div class="screenshots">
+            <button id="infinitygallery-left-arrow" class="left-arrow" onClick="ArrowClick(this.id, 'infinitygallery-right-arrow', false, 50)"><img src="arrow-left.svg" /></button>
+            <img class="infinitygallery-ss-img" style="left:50%;" src="./PinyaGames/InfinityGallery/pg-infinitygallery-ss1.png" />
+            <img class="infinitygallery-ss-img" style="left:150%;" src="./PinyaGames/InfinityGallery/pg-infinitygallery-ss2.png" />
+            <img class="infinitygallery-ss-img" style="left:250%;" src="./PinyaGames/InfinityGallery/pg-infinitygallery-ss3.png" />
+            <img class="infinitygallery-ss-img" style="left:350%;" src="./PinyaGames/InfinityGallery/pg-infinitygallery-ss4.png" />
+            <img class="infinitygallery-ss-img" style="left:450%;" src="./PinyaGames/InfinityGallery/pg-infinitygallery-ss5.png" />
+            <button id="infinitygallery-right-arrow" class="right-arrow" onClick="ArrowClick('infinitygallery-left-arrow', this.id, true, 50)"><img src="arrow-right.svg" /></button>
+        </div>
+    </section>
+
+    <!-- Link Icons -->
+    <section class="link-icons">
+        <a href="https://play.google.com/store/apps/details?id=com.PinyaGames.InfinityGallery" target="_blank">
+            <img src="./CarlesRojas/icon-android.png" />
+        </a>
+        <a href="https://www.microsoft.com/en-us/store/p/infinity-gallery/9nblggh40k00" target="_blank">
+            <img src="./CarlesRojas/icon-windows.png" />
+        </a>
+    </section>   
+    
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">&copy;Infinity Gallery by Pinya Games</p>
+        <p>Infinity Gallery is an app made with Unity targeting the mobile devices. All images display to navigate through it have been made using Illustrator and Photoshop, and Wolfram Alpha was used to devise the algorithm to encode the images. The app is coded in C# is currently published on Google Play and the Windows Store.</p>
+    </section>
+
+
+    <footer>
+        <!-- Navigateion Panel -->
+        <section class="link-container">
+            <a href="software.html">
+                software engineering
+            </a>
+            <a href="design.html">
+                product design
+            </a>
+            <a href="carlesrojas.html">
+                about me
+            </a>
+        </section>
+    </footer>
+</body>
+</html>

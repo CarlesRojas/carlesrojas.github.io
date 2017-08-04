@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Carles Rojas | About</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="controller.js"></script>
+
+</head>
+<body id="top">
+    <header>
+        <!-- Sidebar Navigation -->
+        <nav>
+            <!-- Menu icon -->
+            <button id="menu-icon" class="menu-btn" onclick="Sidebar();">
+                <img id="menu-img" class="menu-btn" src="./menu-icon.svg" />
+            </button>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar" style="left: -300px;">
+                <!-- Sidebar Content -->
+                <ul id="nav-list">
+
+                    <!-- Link to software engineering -->
+                    <li><button class="main-nav-btn" onclick="GoTo('software');">Software Engineering</button></li>
+                    
+                    <!-- Link to product design -->
+                    <li><button class="main-nav-btn" onclick="GoTo('design');">Product Design</button></li>
+
+                    <!-- Carles Rojas -->
+                    <li><button class="main-nav-btn" onclick="ScrollTo('top');">Carles Rojas</button></li>
+                </ul>
+            </div>           
+            
+            <!-- Top icon -->
+            <button id="top-icon" class="top-btn" onclick="ScrollTo('top');">
+                <img id="top-img" class="top-btn" src="./top-icon.svg" />
+            </button>
+        </nav>
+    </header>
+
+
+    <footer>
+        <!-- Navigateion Panel -->
+        <section class="link-container">
+            <a href="software.html">
+                software engineering
+            </a>
+            <a href="design.html">
+                product design
+            </a>
+            <a href="carlesrojas.html">
+                about me
+            </a>
+        </section>
+    </footer>
+</body>
+</html>

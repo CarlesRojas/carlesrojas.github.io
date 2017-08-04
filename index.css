@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    touch-action: manipulation;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+body {
+    overflow: hidden;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* --- TITLE-EXPL --- */
+.title {
+    position: relative;
+    padding: 30px 0px 0px 0px;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    color: black;
+    font-size: 300%;
+    text-align: center;
+    z-index: 0;
+}
+
+.subtitle {
+    position: relative;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    border: 0;
+    width: 80%;
+    left: 10%;
+    color: #757575;
+    font-size: 150%;
+    text-align: center;
+    z-index: 0;
+}
+
+
+
+
+/* --- LINK ICONS --- */
+.link-container {
+    position: relative;
+    padding: 0;
+    margin: 20px;
+    border: 0;
+    width: 100%;
+    height: 160px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.link-container a {
+    display: inline-block;
+    padding: 30px 0;
+    margin: 10px;
+    background-color: #e2e2e2;
+    box-shadow: 0 0 20px black;
+    width: 27%;
+    color: black;
+    font-size: 125%;
+    text-decoration: none;
+    z-index: 10;
+}
+
+
+
+
+
+
+/* SLIDESHOW */
+.slide-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 0;
+}
+
+.slide {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 0;
+}
+
+.slide-img {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#holochess-slide.slide-img {
+    background-image: url('./PinyaGames/HoloChess/pg-holochess-splash.png');
+}
+
+#smartbike-slide.slide-img {
+    background-image: url('./ProductDesign/SmartBike/pd-smartbike-splash.png');
+}
+
+#trickshots-slide.slide-img {
+    background-image: url('./PinyaGames/TrickShots/pg-trickshots-home.png');
+}
+
+#gwood-slide.slide-img {
+    background-image: url('./ProductDesign/Gwood/pd-gwood-splash.png');
+}
+
+#hololens-slide.slide-img {
+    background-image: url('./ProductDesign/Hololens2/pd-hololens-splash.png');
+}
+
+#cubic3d-slide.slide-img {
+    background-image: url('./PinyaGames/Cubic3D/pg-cubic3d-splash.png');
+}
+
+#smartwatch-slide.slide-img {
+    background-image: url('./ProductDesign/SmartWatch/pd-smartwatch-splash.png');
+}
+
+#infinitygallery-slide.slide-img {
+    background-image: url('./PinyaGames/InfinityGallery/pg-infinitygallery-splash.png');
+}
+
+#orbit-slide.slide-img {
+    background-image: url('./ProductDesign/Orbit/pd-orbit-splash.png');
+}
+
+#showbattle-slide.slide-img {
+    background-image: url('./ProductDesign/ShowBattle/pd-showbattle-splash.png');
+}
+
+
+
+
+/* --- MEDIA QUERIES --- */
+@media(max-width: 768px) {
+
+    /* --- LINK ICONS --- */
+    .link-container a {
+        width: 80%;
+    }
+
+    /* SLIDESHOW */
+    .slide-container {
+        height: 45%;
+    }
+
+    .slide {
+        height: 45%;
+    }
+
+    .slide-img {
+        height: 45%;
+        background-position: top;
+        background-size: auto 50%;
+    }
+}

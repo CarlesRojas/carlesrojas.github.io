@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Carles Rojas | Design</title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="controller.js"></script>
+
+</head>
+<body id="top">
+    <header>
+        <!-- Sidebar Navigation -->
+        <nav>
+            <!-- Menu icon -->
+            <button id="menu-icon" class="menu-btn" onclick="Sidebar();">
+                <img id="menu-img" class="menu-btn" src="./menu-icon.svg" />
+            </button>
+
+            <!-- Sidebar -->
+            <div id="sidebar" class="sidebar" style="left: -300px;">
+                <!-- Sidebar Content -->
+                <ul id="nav-list">
+
+                    <!-- Link to software engineering -->
+                    <li><button class="main-nav-btn" onclick="GoTo('software');">Software Engineering</button></li>
+
+                    <li>
+                        <!-- Dropdown Button -->
+                        <button class="main-nav-btn" onclick="ScrollTo('top');">Product Design</button>
+
+                        <!-- Dropdown Content -->
+                        <div id="product-design-drop" class="drop-content">
+                            <button class="sub-nav-btn" onclick="ScrollTo('smartbike');">SmartBike</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('hololens2');">HoloLens 2</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('gwood');">Gwood</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('orbit');">Orbit</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('showbattle');">ShowBattle</button>
+                            <button class="sub-nav-btn" onclick="ScrollTo('smartwatch');">SmartWatch</button>
+                        </div>
+                    </li>
+
+                    <!-- Link to Carles Rojas -->
+                    <li><button class="main-nav-btn" onclick="GoTo('carlesrojas');">Carles Rojas</button></li>
+                </ul>
+            </div>           
+            
+            <!-- Top icon -->
+            <button id="top-icon" class="top-btn" onclick="ScrollTo('top');">
+                <img id="top-img" class="top-btn" src="./top-icon.svg" />
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- SMARTBIKE -->
+    <!-- Parallax Image -->
+    <div id="smartbike" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">smartbike.</p>
+    <p class="subtitle">electric and foldable, the perfect city bike</p>
+    <p class="expl">
+        Smartbike is a design concept aimed at improving individual mobility at cities. It uses airless tires without spokes that revolve around the rim, which is static. The back wheel has an electric motor with batteries allocated in the tube.<br />
+        <br />This bike is can fold to occupy the minimum amount of space. Both wheels retract, and the tube folds on its middle. Once folded the wheels align perfectly which allows users to pull the bike instead of carrying it.
+    </p>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/SmartBike/pd-smartbike-folded.png" />
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> folding mechanism </p>
+
+    <!-- Gif -->
+    <div class="gif-container" id="smartbike-gif">
+        <div class="gif-box">
+            <img class="gif" src="./ProductDesign/SmartBike/pd-smartbike-gif.gif" />
+        </div>
+    </div>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">SmartBike by Carles Rojas</p>
+        <p>Smartbike was the final project for the 3D Modeling subject at EINA, University School of Design and Art. It was modeled with SolidWorks and animated using KeyShot. The final photomontages where made using the renders and Photoshop.</p>
+    </section>
+
+
+
+
+
+    <!-- HOLOLENS 2 -->
+    <!-- Parallax Image -->
+    <div id="hololens2" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">hololens 2.</p>
+    <p class="subtitle">all in one: holographic computer and over-ear headphones</p>
+    <p class="expl">
+        This concept is pulling from the HoloLens device by Microsoft. The holographic screen can be safely rotate when its use is not needed. While on this configuration the headset can be controlled with tactile controls on the right ear-cup.<br />
+        <br />When needed the screen can be pulled down, which resumes the last session. With this design, the device becomes, portable, multifunctional, and avoids the lack of familiarity that the current design iteration has.
+    </p>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/Hololens2/pd-hololens-both.png" />
+
+    <!-- Logo -->
+    <img class="logo" src="./ProductDesign/Hololens2/pd-hololens-logo.png" />
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> unfold the holographic world </p>
+
+    <!-- Gif -->
+    <div class="gif-container" id="hololens2-gif">
+        <div class="gif-box">
+            <img class="gif" src="./ProductDesign/Hololens2/pd-hololens-gif.gif" />
+        </div>
+    </div>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">HoloLens 2 by Carles Rojas</p>
+        <p>HoloLens 2 is a concept project modeled using SolidWorks and animated with KeyShot. It only represents a proof of concept and helps visualize how holographic computers could integrate with currently existing devices. </p>
+    </section>
+
+
+
+
+    <!-- GWOOD -->
+    <!-- Parallax Image -->
+    <div id="gwood" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">gwood.</p>
+    <p class="subtitle">wood-based furniture showcased at 'Feria del Hábitat Valencia 2014'</p>
+    <p class="expl">
+        Gwood is a partnership formed by several students from the 3rd and 4th year from the product design degree from EINA, school about design and art, from Barcelona.<br />
+        <br />What was presented at Feria del Hábitat Valencia 2014 is a furniture family entirely made from beech and maroon details, designed for its placement in small rooms so to be able to better use the little space capacity they offer and the tiny useless nooks they often generate.
+    </p>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/Gwood/pd-gwood-render.png" />
+
+    <!--  Web Link -->
+    <div class="web-link-box">
+        <img class="web-link-img" src="./ProductDesign/Gwood/pd-gwood-logo.png" /><br />
+        <a class="web-link" href="http://gwoodcollection.tumblr.com/" target="_blank"></a>
+    </div>
+
+    <!-- Logo -->
+    <img class="logo" src="./ProductDesign/Gwood/pd-gwood-habitat.png" />
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> use it as a confortable seat or a lounge chair </p>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-container">
+        <div class="screenshots">
+            <button id="gwood-left-arrow" class="left-arrow" onClick="ArrowClick(this.id, 'gwood-right-arrow', false, 50)"><img src="arrow-left.svg" /></button>
+            <img class="gwood-ss-img" style="left:50%;" src="./ProductDesign/Gwood/pd-gwood-ss1.png" />
+            <img class="gwood-ss-img" style="left:150%;" src="./ProductDesign/Gwood/pd-gwood-ss2.png" />
+            <img class="gwood-ss-img" style="left:250%;" src="./ProductDesign/Gwood/pd-gwood-ss3.png" />
+            <img class="gwood-ss-img" style="left:350%;" src="./ProductDesign/Gwood/pd-gwood-ss4.png" />
+            <button id="gwood-right-arrow" class="right-arrow" onClick="ArrowClick('gwood-left-arrow', this.id, true, 50)"><img src="arrow-right.svg" /></button>
+        </div>
+    </section>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">Gwood by Multiple Students of EINA 2014</p>
+        <p>Gwood is a project made by students of EINA, University School of Design and Art for the Hábitat fair in Valencia 2014. Gwood was divided in 5 groups. The lounge chair was modeled with SolidWorks and made at EINA's workshop.</p>
+    </section>
+
+
+
+
+
+    <!-- ORBIT -->
+    <!-- Parallax Image -->
+    <div id="orbit" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">orbit.</p>
+    <p class="subtitle">a concept all-in-one tablet-laptop-desktop computer</p>
+    <p class="expl">
+        Orbit is a computer screen with three configurations, and some variants. If opened flat it has a 21.2 inch screen that can be placed in a stand to work as a full desktop computer. If opened a quarter of the way, to be used like a laptop, the lower part of the screen will display a keyboard or application specific controls. Finally if completely folded backwards the device can be used as a tablet.<br />
+        <br />This future-oriented concept uses graphene technology for the foldable screen and a 360 hinge to allow its rotation.
+    </p>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/Orbit/pd-orbit-extruded.png" />
+
+    <!-- Logo -->
+    <img class="logo" src="./ProductDesign/Orbit/pd-orbit-logo.png" />
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> connect it to the dock to use it as a full desktop pc </p>
+
+    <!-- Gif -->
+    <div class="gif-container" id="orbit-gif">
+        <div class="gif-box">
+            <img class="gif" src="./ProductDesign/Orbit/pd-orbit-gif.gif" />
+        </div>
+    </div>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/Orbit/pd-orbit-float.png" />
+
+    <!-- Link Icons -->
+    <section class="link-icons">
+        <a href="./ProductDesign/Orbit/pd-orbit-pdf.pdf" target="_blank">
+            <img src="./CarlesRojas/icon-pdf.png" />
+        </a>
+    </section>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">Orbit by Carles Rojas</p>
+        <p>Orbit was the final career project at EINA, University School of Design and Art. It was modeled using SolidWorks, rendered and animated with KeyShot and edited with Photoshop. It's a proof of concept for an All-In-One device.</p>
+    </section>
+
+
+
+    <!-- SHOWBATTLE -->
+    <!-- Parallax Image -->
+    <div id="showbattle" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">showbattle.</p>
+    <p class="subtitle">a battle card game inspired by popular tv-shows </p>
+    <p class="expl">
+        Composed by more than 200 cards ShowBattle features the characters, locations and items from 8 different tv-shows. Up to four players compete and fight using the strengths and weaknesses inspired in events of the shows with lot of 'fan-service' interactions between cards.<br />
+        <br />Each card can have attack power, defense, a number of locations required to use it and different effects. Also, each one has a quote about them from its show.
+    </p>
+
+    <!-- Image -->
+    <img class="img" src="./ProductDesign/ShowBattle/pd-showbattle-bb.png" />
+
+    <!-- Logo -->
+    <img class="logo" src="./ProductDesign/ShowBattle/pd-showbattle-logo.png" />
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">ShowBattle by Carles Rojas</p>
+        <p>ShowBattle is a personal project that was completely created using Photoshop. Al the images used are property of the original show producers. The cards where printed once for personal use and where never intended for any commercial use.</p>
+    </section>
+
+
+
+
+
+    <!-- SMARTWATCH -->
+    <!-- Parallax Image -->
+    <div id="smartwatch" class="parallax"><img class="shadow" src="shadow.png" /></div>
+
+    <!-- Title + Explanation -->
+    <p class="title">smartwatch.</p>
+    <p class="subtitle">a new intuitive way to check the time</p>
+    <p class="expl">
+        Apart from its appearance, the goal behind this project was finding out a new way to display the time. Analogic watches have been around for so long that the position of the needles has become something very intuitive for all of us. On the other hand, digital clocks can display the time in a faster and easier way.<br />
+        <br />This concept tries to use the best of both worlds by displaying the time digitally in the position the needles would be. Making it intuitive and fast to read.
+    </p>
+
+    <!-- Image -->
+    <img id="smartwatch-img" class="img" src="./ProductDesign/SmartWatch/pd-smartwatch-hand.png" />
+
+    <!-- Text-Bar -->
+    <p class="text-bar"> intuitive and easy </p>
+
+    <!-- Gif -->
+    <div class="gif-container" id="smartwatch-gif">
+        <div class="gif-box">
+            <img class="gif" src="./ProductDesign/SmartWatch/pd-smartwatch-gif.gif" />
+        </div>
+    </div>
+
+    <!--- Project Footer -->
+    <section class="project-footer">
+        <p class="copy">SmartWatch by Carles Rojas</p>
+        <p>SmartWatch is a project modeled and rendered using SolidWorks for an early project at EINA, University School of Design and Art. The time display method is an original idea animated using Flash Pro.</p>
+    </section>
+
+
+    <footer>
+        <!-- Navigateion Panel -->
+        <section class="link-container">
+            <a href="software.html">
+                software engineering
+            </a>
+            <a href="design.html">
+                product design
+            </a>
+            <a href="carlesrojas.html">
+                about me
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
